@@ -1,82 +1,196 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LordSMP Store</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LordSMP - Loja Oficial</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="navbar">
-<div class="logo"><div class="cube">L</div><div><h1>LordSMP</h1><span>Loja Oficial</span></div></div>
-<nav>
-<a href="#inicio">Início</a>
-<a href="#ranks">Ranks</a>
-<a href="#tags">Tags</a>
-<a href="#faq">FAQ</a>
-<a href="#termos">Termos</a>
-<a class="discord" href="https://discord.gg/GXQSeXK9KN" target="_blank">Discord</a>
-</nav>
-</header>
+  <header class="topbar">
+    <a class="brand" href="#inicio">
+      <img src="logo.png" alt="LordSMP" />
+      <div>
+        <strong>LORDSMP</strong>
+        <span>LOJA OFICIAL</span>
+      </div>
+    </a>
 
-<section class="hero" id="inicio">
-<div class="hero-text">
-<span class="badge">Minecraft • Survival • SMP</span>
-<h2>Loja oficial do <span>LordSMP</span></h2>
-<p>Compre ranks, tags e benefícios exclusivos para o servidor.</p>
-<div class="buttons">
-<button onclick="copyIp()">Copiar IP</button>
-<a href="https://discord.gg/GXQSeXK9KN" target="_blank">Discord</a>
-</div>
-</div>
+    <nav>
+      <a href="#inicio">INÍCIO</a>
+      <a href="#loja">LOJA</a>
+      <a href="#termos">TERMOS</a>
+      <a href="https://discord.gg/GXQSeXK9KN" target="_blank">DISCORD</a>
+    </nav>
 
-<div class="hero-card">
-<h3>Status da Loja</h3>
-<ul>
-<li>✔ Mercado Pago</li>
-<li>✔ Entrega automática</li>
-<li>✔ Pix e Cartão</li>
-<li>✔ Suporte rápido</li>
-</ul>
-</div>
-</section>
+    <div class="right-actions">
+      <div class="search">🔍 <input placeholder="O que você procura?" /></div>
+      <button class="cart">🛒 CARRINHO</button>
+    </div>
+  </header>
 
-<section class="section" id="ranks">
-<h2>Ranks VIP</h2>
-<div class="cards">
-<div class="card"><h3>VIP</h3><span>R$ 9,90</span><button>Comprar</button></div>
-<div class="card featured"><h3>MVP</h3><span>R$ 19,90</span><button>Comprar</button></div>
-<div class="card"><h3>MVP+</h3><span>R$ 29,90</span><button>Comprar</button></div>
-<div class="card"><h3>MMO+</h3><span>R$ 49,90</span><button>Comprar</button></div>
-</div>
-</section>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-bg"></div>
+      <img class="hero-logo" src="logo.png" alt="LordSMP Logo" />
+      <h1>LOJA OFICIAL DO <span>LORDSMP</span></h1>
+      <p>Adquira VIPs, ranks, tags e benefícios exclusivos para o servidor.</p>
 
-<section class="section dark" id="tags">
-<h2>Tags</h2>
-<div class="tags">
-<div class="tag">🔥 Flame</div>
-<div class="tag">🕷 LORD</div>
-<div class="tag">🏹 ARCHER</div>
-<div class="tag">⚡ SUPREME</div>
-</div>
-</section>
+      <button class="ip" onclick="copyIp()">📋 lordsmp.com</button>
 
-<section class="section" id="faq">
-<h2>FAQ</h2>
-<div class="faq">
-<details><summary>Como recebo?</summary><p>Entrega automática após pagamento aprovado.</p></details>
-<details><summary>Tem Pix?</summary><p>Sim, Mercado Pago.</p></details>
-</div>
-</section>
+      <div class="quick-cards">
+        <a href="#loja" class="quick blue">
+          <small>ATÉ 15% OFF</small>
+          <div class="icon">🏪</div>
+          <h2>ACESSAR LOJA</h2>
+          <p>Confira nossas categorias</p>
+        </a>
 
-<section class="section dark" id="termos">
-<h2>Termos</h2>
-<div class="terms">
-<p>Todos os produtos são digitais.</p>
-</div>
-</section>
+        <a href="https://discord.gg/GXQSeXK9KN" target="_blank" class="quick purple">
+          <div class="icon">👥</div>
+          <h2>COMUNIDADE</h2>
+          <p>Entre para o nosso Discord.</p>
+        </a>
+      </div>
+    </section>
 
-<footer>© 2026 LordSMP Store</footer>
-<script src="script.js"></script>
+    <section id="loja" class="shop">
+      <div class="divider"><span>NOSSA LOJA</span></div>
+
+      <div class="category-grid">
+        <a class="category red" href="#ranks">
+          <div>
+            <h3>RANKS</h3>
+            <button>VER PRODUTOS →</button>
+          </div>
+          <div class="pixel">💎</div>
+        </a>
+
+        <a class="category orange" href="#tags">
+          <div>
+            <h3>TAGS<br/>EXCLUSIVAS</h3>
+            <button>VER PRODUTOS →</button>
+          </div>
+          <div class="pixel">🏷️</div>
+        </a>
+
+        <a class="category magenta" href="#kits">
+          <div>
+            <h3>KITS<br/>ESPECIAIS</h3>
+            <button>VER PRODUTOS →</button>
+          </div>
+          <div class="pixel">🧰</div>
+        </a>
+
+        <a class="category cyan" href="#discord">
+          <div>
+            <h3>DISCORD<br/>OFICIAL</h3>
+            <button>ENTRAR →</button>
+          </div>
+          <div class="pixel">💬</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="ranks" class="products">
+      <div class="divider"><span>RANKS VIP</span></div>
+
+      <div class="product-grid">
+        <article class="product">
+          <div class="ribbon">INICIAL</div>
+          <h3>VIP</h3>
+          <p>Rank básico para apoiar o servidor.</p>
+          <strong>R$ 9,90</strong>
+          <ul>
+            <li>Prefixo VIP</li>
+            <li>Kit exclusivo</li>
+            <li>Benefícios básicos</li>
+          </ul>
+          <button>COMPRAR</button>
+        </article>
+
+        <article class="product highlight">
+          <div class="ribbon">POPULAR</div>
+          <h3>MVP</h3>
+          <p>Mais vantagens e destaque no chat.</p>
+          <strong>R$ 19,90</strong>
+          <ul>
+            <li>Prefixo MVP</li>
+            <li>Kit melhorado</li>
+            <li>Prioridade</li>
+          </ul>
+          <button>COMPRAR</button>
+        </article>
+
+        <article class="product">
+          <div class="ribbon">PREMIUM</div>
+          <h3>MVP+</h3>
+          <p>Rank avançado com visual premium.</p>
+          <strong>R$ 29,90</strong>
+          <ul>
+            <li>Prefixo MVP+</li>
+            <li>Kit avançado</li>
+            <li>Mais comandos</li>
+          </ul>
+          <button>COMPRAR</button>
+        </article>
+
+        <article class="product gold">
+          <div class="ribbon">MÁXIMO</div>
+          <h3>MMO+</h3>
+          <p>O rank mais forte da loja.</p>
+          <strong>R$ 49,90</strong>
+          <ul>
+            <li>Kit lendário</li>
+            <li>Maior destaque</li>
+            <li>Benefícios máximos</li>
+          </ul>
+          <button>COMPRAR</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="tags" class="products dark">
+      <div class="divider"><span>TAGS</span></div>
+
+      <div class="tag-grid">
+        <div class="tag flame">🔥 <b>Tag: Flame</b><span>Visual quente e chamativo</span></div>
+        <div class="tag lord">🕷️ <b>Tag: LORD</b><span>Estilo dominante no servidor</span></div>
+        <div class="tag archer">🏹 <b>Tag: ARCHER</b><span>Perfeita para jogadores PvP</span></div>
+        <div class="tag supreme">⚡ <b>Tag: SUPREME</b><span>Tag premium de destaque</span></div>
+      </div>
+    </section>
+
+    <section id="discord" class="discord-section">
+      <h2>ENTRE NA COMUNIDADE</h2>
+      <p>Suporte, novidades, eventos e compras oficiais acontecem no Discord.</p>
+      <a href="https://discord.gg/GXQSeXK9KN" target="_blank">ABRIR DISCORD</a>
+    </section>
+
+    <section id="termos" class="terms">
+      <div class="divider"><span>TERMOS E FAQ</span></div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Termos de Compra</h3>
+          <p>Produtos digitais não possuem envio físico. Ao comprar, informe corretamente seu nick. Fraudes, chargeback ou tentativas de burlar o sistema podem resultar em banimento permanente.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>FAQ</h3>
+          <details><summary>Como recebo meu produto?</summary><p>A entrega ocorre após confirmação do pagamento.</p></details>
+          <details><summary>Tem suporte?</summary><p>Sim, pelo Discord oficial.</p></details>
+          <details><summary>Pix funciona?</summary><p>Sim, quando integrado ao Mercado Pago.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="logo.png" alt="LordSMP" />
+    <p>© 2026 LordSMP — Loja Oficial. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
