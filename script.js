@@ -1,0 +1,1 @@
+function copyIp(){navigator.clipboard.writeText('play.lordsmp.com');alert('IP copiado!')}
