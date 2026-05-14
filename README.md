@@ -1,16 +1,20 @@
-# LordSMP Store Premium
+# LordSMP Store Site
 
-Site estático pronto para Vercel.
+Site Next.js premium para Vercel.
 
-## Como publicar
-Coloque estes arquivos na raiz do repositório:
+## Instalar
+npm install
+npm run dev
 
-- index.html
-- style.css
-- script.js
-- logo.png
+## Variáveis na Vercel
+JWT_SECRET=troque_essa_senha
+ADMIN_EMAIL=seu_email
+ADMIN_PASSWORD=sua_senha
+PLUGIN_SECRET=mesmo_token_do_plugin
+NEXT_PUBLIC_DISCORD=https://discord.gg/GXQSeXK9KN
+NEXT_PUBLIC_SERVER_IP=lordsmp.blazebr.xyz
 
-Na Vercel use:
-- Framework: Other
-- Build Command: vazio
-- Output Directory: .
+## Painel
+/admin/login
+
+Obs: protótipo funcional com storage em memória. Para produção real, conectar Prisma + MySQL/PostgreSQL + Mercado Pago API real.
